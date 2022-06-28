@@ -8,16 +8,4 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class AppComponent {
   title = 'biblioteca';
-  content:any = []
-
-  books = new FormGroup({
-    name: new FormControl(''),
-    author: new FormControl(''),
-    date: new FormControl('')
-  })
-
-  submit(){
-    console.log(this.books.value)
-  }
-
 }

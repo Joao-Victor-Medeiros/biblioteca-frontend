@@ -1,0 +1,41 @@
+<div class="container mt-lg-4">
+  <div class="col-xs-8">
+    <h2 class="text-center">Cadastrar livros</h2>
+    <div class="align-content-sm-between">
+      <form [formGroup]="booksGroup" (ngSubmit)="submit()">
+        <div class="form-group">
+          <label>Nome do livro</label>
+          <input class="form-control" type="text" formControlName="name">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Autor do livro</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" formControlName="author">
+        </div>
+        <div class="form-group" >
+          <label>Data da publicação do livro</label>
+          <input type="data" class="form-control" placeholder="--/--/----" formControlName="date">
+        </div>
+        <button class="btn btn-primary mt-lg-3" type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="table">
+  <table class="table table-borderless mt-lg-5 text-center">
+    <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Data de cadastro</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let b of books">
+      <td>{{b.name}}</td>
+      <td>{{b.author}}</td>
+      <td>{{b.date}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
