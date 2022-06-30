@@ -1,27 +1,22 @@
-# Biblioteca
+![objects](https://user-images.githubusercontent.com/53875554/176582017-cb1156bb-3529-412c-b6cd-5f146725ea3c.jpg)
+<a href="https://github.com/Joao-Victor-Medeiros/biblioteca-frontend/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Joao-Victor-Medeiros/biblioteca-frontend"></a>
+![objects](https://img.shields.io/static/v1?label=npm&message=13.2.1&color=<COLOR>)
+![objects](https://img.shields.io/static/v1?label=bootstrap&message=5.2&color=<COLOR>)
+![objects](https://img.shields.io/static/v1?label=Angular&message=13.2.0&color=<COLOR>)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
+# Introduction to Biblioteca
+Esta aplicação web é uma biblioteca cujo consiste no cadastramento e exibição dos livros cadastrados em uma tabela de livros cadastrados
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Primeiramente instale o node e  o npm, logo após rode o comando npm install -g @angular/cli@13.2.1 e para inciar a aplicação utilize o ng serve, deste modo a aplicação escutará na porta `http://localhost:4200`.
 
-## Code scaffolding
+Em segundo plano (e último) faremos a instalação do bootstrap `npm install bootstrap`, após instalação vá até o arquivo src/style.css e copie o seguinte cógigo: `@import '~bootstrap/dist/css/bootstrap.min.css'`;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Techinques
+Fora feito um reactive form com a biblioteca bootstrap para estilização da página
 
-## Build
+## Unit tests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Rode `ng test` para executar teste unitário via [Karma](https://karma-runner.github.io).
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
